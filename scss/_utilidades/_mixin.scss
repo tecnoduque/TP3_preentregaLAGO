@@ -1,0 +1,20 @@
+@mixin boton-redondeado($radius) {
+    border-radius: $radius;
+  }
+  
+  .boton {
+    background-color: $color-botones;
+    color: $color-principal;
+    padding: 10px 20px;
+    @include boton-redondeado(5px);
+    width: 23%;
+    text-align: center;
+}
+@mixin footer-estilo {
+    background-color: $color-principal;
+    font-size: 1em;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+  }

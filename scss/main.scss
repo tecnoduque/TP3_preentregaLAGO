@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+
+@import "scss/_utilidades/variables";
+@import "scss/_utilidades/mixin";
+
+.navbar-nav li a {
+    font-size: 1.5em;
+}
+
+.logo-glaciar img {
+    width: 100px;
+    height: auto;
+}
+
+.copete {
+    text-align: center;
+}
+
+.tarj-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+    background-color: $color-fondo;
+    padding: 1.5em;
+
+}
+
+.tarjetas {
+    background-color: $color-fondo;
+    border-radius: 5px;
+
+    // overflow: hidden;
+
+
+    img {
+        max-width: 100%;
+        height: 320px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+}
+
+.t-imagen {
+    position: relative;
+    display: inline-block;
+}
+
+.texto-encima {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 2s;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-secundario;
+
+    h2 {
+        display: block;
+        color: $color-fondo;
+        font-size: 1.5em;
+    }
+
+    p {
+        display: block;
+        color: white;
+        background-color: $color-fondo;
+        font-size: 2em;
+
+    }
+}
+
+.t-imagen:hover .texto-encima {
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 767px) {
+
+    .tarjetas img {
+        max-width: 100%;
+        height: 100px;
+    }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .tarjetas img {
+        max-width: 100%;
+        height: 200px;
+    }
+
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+form {
+    max-width: 70%;
+    // margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: $color-botones;
+    color: $color-principal;
+    cursor: pointer;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.footer-container {
+    @include footer-estilo;
+}
+
+.micarru {
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    justify-content: center;
+    border: 1px black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .columna1 {
+        width: 100% ;
+        margin: 10px;
+    }
+    .columnas {
+        width: 40% ;
+        margin: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+.tarj-guias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
