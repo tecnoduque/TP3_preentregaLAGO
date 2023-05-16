@@ -1,0 +1,66 @@
+.TarjetasContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+    background-color: $color-fondo;
+    padding: 1.5em;
+
+}
+
+.Tarjetas {
+    background-color: $color-fondo;
+    border-radius: 5px;
+
+    img {
+        max-width: 100%;
+        height: 320px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+}
+.TarjetasImagen {
+    position: relative;
+    display: inline-block;
+}
+.TextoEncima {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 2s;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-secundario;
+
+    h2 {
+        display: block;
+        color: $color-fondo;
+        font-size: 1.5em;
+    }
+
+    p {
+        display: block;
+        color: white;
+        background-color: $color-fondo;
+        font-size: 2em;
+
+    }
+}
+.TarjetasImagen:hover .TextoEncima {
+    opacity: 1;
+}
+
+

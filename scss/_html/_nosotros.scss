@@ -1,0 +1,26 @@
+.TarjetasGuias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+.Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .Columna1 {
+        width: 100% ;
+        margin: 10px;
+    }
+    .Columnas {
+        width: 40% ;
+        margin: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

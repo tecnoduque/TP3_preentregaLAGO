@@ -1,0 +1,54 @@
+@media only screen and (max-width: 767px) {
+
+    .TarjetasContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat (4 1fr);
+        justify-items: center;
+    }
+
+    .Tarjetas img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .TarjetasGuias {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        gap: 30px;
+    }
+
+form {
+    max-width: 90%;
+    // margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+.Contacto { 
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .Boton {
+        background-color: $color-botones;
+        color: $color-principal;
+        padding: 10px 20px;
+        @include boton-redondeado(5px);
+        text-align: center;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        margin: auto 0;
+    }
+}
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {  
+
+
+}
