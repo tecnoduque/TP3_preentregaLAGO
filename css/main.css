@@ -74,6 +74,29 @@ h1 {
     width: 100%;
     height: auto; }
 
+h1 {
+  text-align: center; }
+
+.opiniones {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px; }
+
+h2 {
+  color: #1dadbf; }
+
+.calificacion {
+  color: #1dadbf;
+  font-weight: bold; }
+
+.estrella {
+  font-size: 24px; }
+
+.autor {
+  font-style: italic;
+  color: #666666; }
+
 .TarjetasContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

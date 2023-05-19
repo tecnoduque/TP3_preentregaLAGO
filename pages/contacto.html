@@ -11,104 +11,108 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <meta name="description" content="¿Querés saber más sobre nuestros tours en la Patagonia o tenés alguna duda sobre nuestra agencia de turismo? Contáctanos en Glaciar.ar y nuestro equipo te atenderá con gusto. Encontralos en esta página.">
-    <meta name="keywords" content="Patagonia, Glaciares, Turismo, Naturaleza, Tours, Aventura, Trekking, Expediciones, Excursiones, Viajes, Argentina, Sudamérica, Actividades al aire libre, Ecoturismo">
-  
+    <meta name="description"
+        content="¿Querés saber más sobre nuestros tours en la Patagonia o tenés alguna duda sobre nuestra agencia de turismo? Contáctanos en Glaciar.ar y nuestro equipo te atenderá con gusto. Encontralos en esta página.">
+    <meta name="keywords"
+        content="Patagonia, Glaciares, Turismo, Naturaleza, Tours, Aventura, Trekking, Expediciones, Excursiones, Viajes, Argentina, Sudamérica, Actividades al aire libre, Ecoturismo">
     <title>Ponete en contacto con nosotros! GLACIAR.AR || Agencia de Viajes en Patagonia </title>
     <link rel="shortcut icon" href="../img/logo.jpg" type="image/x-icon">
-
-  
-  
-  </head>
+</head>
 
 <body>
-    <!-- menu de navegación -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light animate__animated animate__bounce">
-        <a class="navbar-brand" href="index.html"></a>
-        <div class="LogoGlaciar"> <img src="../img/logo.jpg" alt="Logo"></div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <header>
+        <!-- menu de navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light animate__animated animate__bounce">
+            <a class="navbar-brand" href="index.html"></a>
+            <div class="LogoGlaciar"> <img src="../img/logo.jpg" alt="Logo"></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="excursiones.html">Excursiones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experiencias.html">Experiencias</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Contacto</li>
+            </ol>
+        </nav>
+    </header>
+    <main>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="excursiones.html">Excursiones</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="experiencias.html">Experiencias</a>
-                </li>
-            </ul>
+        <!-- fin menu navegación -->
+        <!-- comienzo formulario -->
+        <h1>Contactese con nosotros</h1>
+        <div class="Contacto">
+            <div class="Boton">
+                <a href="https://wa.me/2966658946" target="_blank">Whatsapp</a>
+            </div>
+            <div class="Boton">
+
+                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            </div>
+            <div class="Boton">
+
+                <a href="https://www.tripadvisor.com.ar/" target="_blank">TripAdvisor</a>
+            </div>
+
         </div>
+        <div>
 
-    </nav>
+            <form>
+                <div class="contacto-form">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="contacto-form">
+                    <label for="name">Apellido:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="contacto-form">
+                    <label for="pais">Pais:</label>
+                    <select>
+                        <option value="ar">Argentina</option>
+                        <option value="br">Brasil</option>
+                        <option value="cl">Chile</option>
+                        <option value="pe">Perú</option>
+                        <option value="me">México</option>
+                        <option value="co">Colombia</option>
+                        <option value="ve">Venezuela</option>
+                    </select>
+                </div>
+                <div class="contacto-form">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="contacto-form">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
 
-    <!-- fin menu navegación -->
-    <!-- comienzo formulario -->
-    <h1>Contactese con nosotros</h1>
-
-    <div class="Contacto">
-        <div class="Boton">
-            <a href="https://wa.me/2966658946" target="_blank">Whatsapp</a>
         </div>
-        <div class="Boton">
+        <!--fin formulario-->
 
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        </div>
-        <div class="Boton">
-
-            <a href="https://www.tripadvisor.com.ar/" target="_blank">TripAdvisor</a>
-        </div>
-
-    </div>
-    <div class="">
-
-        <form>
-            <div class="contacto-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div class="contacto-form">
-                <label for="name">Apellido:</label>
-                <input type="text" id="name" name="name">
-            </div>
-            <div class="contacto-form">
-                <label for="pais">Pais:</label>
-                <select>
-                    <option value="ar">Argentina</option>
-                    <option value="br">Brasil</option>
-                    <option value="cl">Chile</option>
-                    <option value="pe">Perú</option>
-                    <option value="me">México</option>
-                    <option value="co">Colombia</option>
-                    <option value="ve">Venezuela</option>
-                </select>
-            </div>
-            <div class="contacto-form">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
-            </div>
-            <div class="contacto-form">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
-
-    </div>
-
-
-    <!--fin formulario-->
+    </main>
     <footer>
         <div class="FooterContainer">
             <p>Descubre la Patagonia con glaciar.ar. Todos los derechos reservados. Para más información haga click <a
